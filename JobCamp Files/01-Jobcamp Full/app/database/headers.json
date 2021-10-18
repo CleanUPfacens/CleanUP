@@ -1,0 +1,59 @@
+{
+  "headerNormal":{
+    "hideMegamenu": true,
+    "additional_header_class": "site-header--menu-right bg-default py-7 py-lg-0",
+    "absolute_header": true,
+    "container_fluid": false,
+    "sticky_header": true,
+    "mobile_sticky": false,
+    "header_button": false,
+    "header_double_button": true,
+    "additional_db_classes": "header-btn-devider ml-auto pr-2 ml-lg-6 d-none d-xs-flex",
+    "header_button_class_1" : "btn btn-transparent text-uppercase font-size-3 heading-default-color focus-reset",
+    "header_button_text_1" : "Log in",
+    "header_button_class_2" : "btn btn-primary text-uppercase font-size-3",
+    "header_button_text_2" : "Sign up"
+  },
+  "headerNormalFluid":{
+    
+  },
+  "headerNormalTransparent":{
+    "hideMegamenu": true,
+    "additional_header_class": "site-header--menu-right dynamic-sticky-bg py-7 py-lg-0",
+    "absolute_header": true,
+    "container_fluid": false,
+    "sticky_header": true,
+    "mobile_sticky": false,
+    "header_button": false,
+    "header_double_button": true,
+    "additional_db_classes": "header-btn-devider ml-auto pr-2 ml-lg-6 d-none d-xs-flex",
+    "header_button_class_1" : "btn btn-transparent text-uppercase font-size-3 heading-default-color focus-reset",
+    "header_button_text_1" : "Log in",
+    "header_button_class_2" : "btn btn-primary text-uppercase font-size-3",
+    "header_button_text_2" : "Sign up"
+  },
+  "headerLoggedInDashboard":{
+    "hideMegamenu": true,
+    "additional_header_class": "site-header--menu-right bg-default position-fixed py-7 py-xs-0",
+    "absolute_header": true,
+    "container_fluid": true,
+    "container_fluid_class":" px-10",
+    "sticky_header": false,
+    "mobile_sticky": false,
+    "header_button": false,
+    "loggedIn":true
+  },
+  "headerLoggedIn":{
+    "hideMegamenu": true,
+    "additional_header_class": "site-header--menu-right bg-default position-fixed py-7 py-xs-0",
+    "absolute_header": true,
+    "container_fluid": false,
+    "sticky_header": true,
+    "mobile_sticky": false,
+    "header_button": false,
+    "loggedIn":true
+  },
+  "headerLoggedInFluid":{
+
+  }
+}

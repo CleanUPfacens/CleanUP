@@ -1,0 +1,86 @@
+{% extends "template.njk" %}
+{# Import Section #}
+{% import "components/Header/_header.njk" as Header %}
+{% import "homeThree/hero.njk" as Hero %}
+{% import "homeThree/3-steps-sections.njk" as 3stepsSection1 %}
+{% import "homeThree/company.njk" as Brand1Section %}
+{% import "homeThree/content.njk" as ContentOne %}
+{% import "homeThree/featuredJob.njk" as featuredJobThree %}
+{% import "homeThree/content-2.njk" as ContentThree %}
+{% import "homeThree/testimonial.njk" as testimonialOne %}
+{% import "homeThree/pricing.njk" as Pricing %}
+{% import "components/footer/footer.njk" as Footer %}
+
+<!-- header start start -->
+{% set page_data = {
+  page_title: "landing-1"
+} 
+%}
+<!-- header start end -->
+
+<!-- block main start -->
+{% block main %}
+
+  <!-- Header start  -->
+  {{Header.render(headerNormalTransparent)}}
+  <!-- Header start end -->
+
+  <!-- Hero Area -->
+  {{Hero.render()}}
+  <!-- Hero Area -->
+
+  <!-- 3stepsSection1 Area -->
+  {{3stepsSection1.render({
+    "servicesSection" : [
+        {   
+            "color" : "dodger",
+            "icon" : "./image/svg/shoot.svg",
+            "title" : "Register Your Account",
+            "content" : "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital."
+
+        },
+        {   
+            "color" : "green",
+            "icon" : "./image/svg/user.svg",
+            "title" : "Apply for New Jobs",
+            "content" : "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches."
+
+        },
+        {   
+            "color" : "casablanca",
+            "icon" : "./image/svg/heart.svg",
+            "title" : "Get Hired Immediately",
+            "content" : "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital."
+
+        }
+
+    ]
+    })
+}}
+  <!-- 3stepsSection1 Area End -->
+
+  <!-- ContentOne Area -->
+  {{featuredJobThree.render({"featureCardData" : homeThree.featuredJob})}}
+  <!-- ContentOne Area End -->
+
+  <!-- ContentOne Area -->
+  {{ContentOne.render()}}
+  <!-- ContentOne Area End -->
+
+  <!-- ContentThree Area -->
+  {{ContentThree.render()}}
+  <!-- ContentThree Area -->
+
+  <!-- Testimonial Start -->
+  {{testimonialOne.render()}}
+  <!-- Testimonial End -->
+
+  <!-- pricing area function start -->
+  {{Pricing.render()}}
+  <!-- pricing area function end -->
+
+  <!-- footer area function start -->
+  {{Footer.render()}}
+  <!-- footer area function end -->
+  
+{% endblock %}

@@ -1,0 +1,227 @@
+{% extends "template.njk" %}
+{# Import Section #}
+{% import "components/Header/_header.njk" as Header %}
+{% import "innerpage/featureJobsTow.njk" as InnerJobSectionTow %}
+{% import "innerpage/sidebar-search.njk" as SidebarSearch %}
+{% import "components/footer/footer.njk" as Footer %}
+
+<!-- header start start -->
+{% set page_data = {
+    page_title: "landing-2"
+  } 
+%}
+<!-- header start end -->
+
+<!-- block main start -->
+{% block main %}
+
+  <!-- Header start  -->
+  {{Header.render(headerNormal)}}
+  <!-- Header end -->
+
+  <!-- Main Content Start -->
+  <div class="bg-default-1 pt-26 pt-lg-28 pb-13 pb-lg-25">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-12 col-lg-4 col-md-5 col-xs-8">
+          <!-- Sidebar Start -->
+          {{SidebarSearch.render()}}
+          <!-- Sidebar End -->
+        </div>
+        <!-- Main Body -->
+        <div class="col-12 col-xl-8 col-lg-8">
+          <!-- form -->
+          <form action="/" class="search-form">
+            <div class="filter-search-form-2 search-1-adjustment bg-white rounded-sm shadow-7 pr-6 py-6 pl-6">
+              <div class="filter-inputs">
+                <div class="form-group position-relative w-lg-45 w-xl-40 w-xxl-45">
+                  <input class="form-control focus-reset pl-13" type="text" id="keyword" placeholder="UI Designer">
+                  <span class="h-100 w-px-50 pos-abs-tl d-flex align-items-center justify-content-center font-size-6">
+                    <i class="icon icon-zoom-2 text-primary font-weight-bold"></i>
+                  </span>
+                </div>
+                <!-- .select-city starts -->
+                <div class="form-group position-relative w-lg-55 w-xl-60 w-xxl-55">
+                  <select name="country" id="country" class="nice-select font-size-4 pl-13 h-100 arrow-3">
+                    <option data-display="City, state, zip code or (Remote)">City</option>
+                    <option value="">United States of America</option>
+                    <option value="">United Arab Emirates</option>
+                    <option value="">Bangladesh</option>
+                    <option value="">Pakistan</option>
+                  </select>
+                  <span class="h-100 w-px-50 pos-abs-tl d-flex align-items-center justify-content-center font-size-6">
+                    <i class="icon icon-pin-3 text-primary font-weight-bold"></i>
+                  </span>
+                </div>
+                <!-- ./select-city ends -->
+              </div>
+              <div class="button-block">
+                <button class="btn btn-primary line-height-reset h-100 btn-submit w-100 text-uppercase">Search</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="pt-12">
+            <div class="d-flex align-items-center justify-content-between mb-6">
+              <h5 class="font-size-4 font-weight-normal text-gray">
+                <span class="heading-default-color">120</span>
+                                results for <span class="heading-default-color">UI Designer</span></h5>
+                  <div class="d-flex align-items-center result-view-type">
+                    <a class="heading-default-color pl-5 font-size-6 hover-text-hitgray active" href="./search-list-1.html">
+                      <i class="fa fa-list-ul"></i>
+                    </a>
+                    <a class="heading-default-color pl-5 font-size-6 hover-text-hitgray" href="./search-grid.html">
+                      <i class="fa fa-th-large"></i>
+                    </a>
+                  </div>
+            </div>
+
+            {{InnerJobSectionTow.render({
+                                "featureCardData":[
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-1.png",
+                                    "title":"Product Designer",
+                                    "subtitle":"AirBnb",
+                                    "srange":"80-90K",
+                                    "tags":["Agile","Wireframing","Prototyping"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-2.png",
+                                    "title":"UI/UX Designer",
+                                    "subtitle":"Apple INC",
+                                    "srange":"120-150K",
+                                    "tags":["Visual Design","Wireframing","Scrum"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-3.png",
+                                    "title":"iOS Developer",
+                                    "subtitle":"Shopify",
+                                    "srange":"100-120K",
+                                    "tags":["Swift","Objective C","X Code"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-4.png",
+                                    "title":"Creative Director",
+                                    "subtitle":"Facebook",
+                                    "srange":"80-90K",
+                                    "tags":["Agile","Wireframing","Prototyping"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-5.png",
+                                    "title":"Software Engineer",
+                                    "subtitle":"Oculus",
+                                    "srange":"80-90K",
+                                    "tags":["C++","JavaScprit","ReactJS"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                      
+                                    ]
+                                  },
+                                  {
+                                    "logo":"./image/l2/png/featured-job-logo-1.png",
+                                    "title":"Product Designer",
+                                    "subtitle":"AirBnb",
+                                    "srange":"80-90K",
+                                    "tags":["Agile","Wireframing","Prototyping"],
+                                    "widgets":[
+                                      {
+                                        "icon":"./image/svg/icon-loaction-pin-black.svg",
+                                        "text":"Berlyn, UK"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-suitecase.svg",
+                                        "text":"Full-time"
+                                      },
+                                      {
+                                        "icon":"./image/svg/icon-clock.svg",
+                                        "text":"9d ago"
+                                      }
+                                    ]
+                                  }
+                                ]
+                            })
+                        }}
+            <div class="text-center pt-5 pt-lg-13">
+              <a class="text-green font-weight-bold text-uppercase font-size-3" href="#">
+                Load More <i class="fas fa-sort-down ml-3"></i>
+              </a>
+            </div>
+          </div>
+          <!-- form end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Content end -->
+  <!-- footer area function start -->
+  {{Footer.render()}}
+  <!-- footer area function end -->
+{% endblock %}

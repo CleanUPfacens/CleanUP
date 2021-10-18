@@ -1,0 +1,33 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Header/_menu.njk" as Menu %}
+{% import "components/footer/footer.njk" as Footer %}
+{% import "homeThree/pricing.njk" as Pricing %}
+
+<!-- header start start -->
+{% set page_data = {
+  page_title: "landing-1",
+  header: {
+    
+  }
+} 
+%}
+<!-- header start end -->
+
+
+{% block main %}
+    <!-- Header start  -->
+    {{Header.render(headerNormal)}}
+    <!-- Header start end -->
+
+    
+    <div class="pt-md pt-17">
+        <!-- pricing area function start -->
+        {{Pricing.render()}}
+        <!-- pricing area function end -->
+    </div>
+
+    <!-- footer area function start -->
+    {{Footer.render()}}
+    <!-- footer area function end -->
+{% endblock %}

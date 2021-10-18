@@ -1,0 +1,12 @@
+{% macro render(options) %}
+  {% import "components/tags.njk" as Tag %}
+  <ul class="list-unstyled d-flex align-items-center flex-wrap">
+    {% for items in options.Tags %}
+      {{Tag.TagsOne({
+            "tagName" : items.tagName,
+            "BGcolor" : items.BGcolor,
+            "TXTcolor" : items.TXTcolor
+          })}}
+  {% endfor %}
+  </ul>
+{% endmacro %}

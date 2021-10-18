@@ -1,0 +1,53 @@
+{% extends "template.njk" %}
+{# Import Section #}
+{% import "components/Header/_header.njk" as Header %}
+{% import "homeOne/hero.njk" as Hero %}
+{% import "homeOne/company.njk" as Brand1Section %}
+{% import "homeOne/category.njk" as category %}
+{% import "homeOne/content.njk" as ContentOne %}
+{% import "homeOne/featuredJob.njk" as featuredJobOne %}
+{% import "homeOne/content-2.njk" as ContentTwo %}
+{% import "components/footer/footer.njk" as Footer %}
+
+<!-- header start start -->
+{% set page_data = {
+    page_title: "landing-1"
+  } 
+%}
+<!-- header start end -->
+
+<!-- block main start -->
+{% block main %}
+
+    <!-- Header start  -->
+    {{Header.render(headerNormalTransparent)}}
+    <!-- Header start end -->
+
+    <!-- Hero Area -->
+    {{Hero.render()}}
+    <!-- Hero Area -->
+
+    <!-- Brand1Section Area -->
+    {{Brand1Section.render()}}
+    <!-- Brand1Section Area -->
+
+    <!-- category Area -->
+    {{category.render({cardOneSection: homeOne.cardOneSection})}}
+    <!-- category Area -->
+
+        <!-- ContentOne Area -->
+    {{ContentOne.render()}}
+    <!-- ContentOne Area -->
+
+    <!-- featuredJobOne Area -->
+    {{featuredJobOne.render({"featureJobSection1" : homeOne.FeaturedJob})}}
+    <!-- featuredJobOne Area -->
+
+    <!-- ContentTwo Area -->
+    {{ContentTwo.render()}}
+    <!-- ContentTwo Area -->
+
+    <!-- footer area function start -->
+    {{Footer.render()}}
+    <!-- footer area function end -->
+{% endblock %}

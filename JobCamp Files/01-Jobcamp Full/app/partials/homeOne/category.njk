@@ -1,0 +1,39 @@
+{% macro render(options) %}
+{% import "components/Cards/cards.njk" as Card1 %}
+<!-- Category Area -->
+<div class="pt-11 pt-lg-26 pb-lg-16" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
+    <div class="container">
+        <!-- Section Top -->
+        <div class="row align-items-center pb-14">
+            <!-- Section Title -->
+            <div class="col-12 col-lg-6">
+                <div class="text-center text-lg-left mb-13 mb-lg-0">
+                    <h2 class="font-size-9 font-weight-bold">Explore by category</h2>
+                </div>
+            </div>
+            <!-- Section Button -->
+            <div class="col-12 col-lg-6">
+                <div class="text-center text-lg-right">
+                    <a class="btn btn-outline-green text-uppercase" href="#">Explore All</a>
+                </div>
+            </div>
+            <!-- Section Button End -->
+        </div>
+        <!-- End Section Top -->
+        <div class="row justify-content-center">
+
+            {% for data in options.cardOneSection %}
+            {{Card1.cardOne(
+                {
+                   "color"   : data.color,
+                   "icon"    : data.icon, 
+                   "heading" : data.heading, 
+                   "counter" : data.counter
+                }
+                )}}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- End Category Area -->
+{% endmacro %}}

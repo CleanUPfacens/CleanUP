@@ -1,0 +1,34 @@
+{% macro render(options) %}
+{% import "components/Services/Services.njk" as Services1 %}
+<!-- Section Services Area -->
+<div class="pt-11 pt-lg-20 pb-7 pb-lg-18">
+    <div class="container">
+        <!-- Section title -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 col-xxl-5">
+                <div class="text-center mb-8 mb-lg-18 px-xl-9 px-xxl-7">
+                    <h2 class="font-size-9 mb-6">Easy steps to<br class="d-none d-sm-block" > land your next job</h2>
+                    <p class="font-size-4 text-default-color px-xs-9 px-md-0">Creating a beautiful job website is not easy always. To make your life easier, we are introducing Jobcamp template.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Section title -->
+        <!-- Services Content -->
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                {% for data in options.servicesSection %}
+                    {{Services1.ServicesOne(
+                        {   
+                            "color" : data.color,
+                            "icon" : data.icon,
+                            "title" : data.title,
+                            "content" : data.content
+                        }
+
+                    )}}
+                {% endfor %}
+            </div>
+        <!-- End Services Content -->
+    </div>
+</div>
+
+{% endmacro %}

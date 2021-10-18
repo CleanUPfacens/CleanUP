@@ -1,0 +1,39 @@
+{% macro render(options) %}
+  {% import "components/Cards/cards.njk" as JobCard %}
+  <div class="bg-default-2 pt-12 pt-lg-25 pb-12 pb-lg-25">
+    <div class="container">
+
+      <!-- Section title -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 col-xxl-5">
+          <div class="text-center mb-8 mb-lg-18 px-xl-9 px-xxl-7">
+            <h2 class="font-size-9 mb-6">Featured Jobs</h2>
+            <p class="font-size-4 text-default-color px-xs-9 px-md-0">Creating a beautiful job website is not easy always. To make your life easier, we are introducing Jobcamp template.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Section title -->
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+        {% for data in options.featureCardData %}
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-11 mb-9">
+            {{JobCard.FeatureCardThree({
+            "bookmarked":data.bookmarked,
+            "logo":data.logo,
+            "logoBg":data.logoBg,
+            "title":data.title,
+            "subtitle":data.subtitle,
+            "tags":data.tags
+          })}}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-12 text-center pt-md-11 ">
+          <a class="text-green font-weight-bold text-uppercase font-size-3" href="#">See 1,294 more jobs  <i class="fas fa-arrow-right ml-3"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

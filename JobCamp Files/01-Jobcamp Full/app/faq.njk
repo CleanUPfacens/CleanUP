@@ -1,0 +1,180 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Header/_menu.njk" as Menu %}
+{% import "components/footer/footer.njk" as Footer %}
+
+
+
+<!-- header start start -->
+{% set page_data = {
+        page_title: "landing-1"
+    } 
+%}
+  <!-- header start end -->
+
+
+
+
+
+
+
+
+<!-- block start -->
+{% block main %}
+<!-- Header start  -->
+{{Header.render(headerNormal)}}
+<!-- Header start end -->
+
+
+
+<!-- jobDetails-section -->
+<div class="jobDetails-section bg-default pt-md-30 pt-sm-25 pt-23 pb-md-27 pb-sm-20 pb-17">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-md-7 pr-xl-15" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                <div class="">
+                    <h3 class="font-size-9 font-weight-bold mb-7 mb-lg-13">Frequently Asked Questions</h3>
+                    <p class="font-size-4 mb-2">Not seeing your question here?</p>
+                    <a href="#" class="font-size-3 font-weight-bold text-green text-uppercase">Chat with us</a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-11" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                <div class="faq-content pt-lg-4 pt-6">
+                    <div class="accordion rounded-10 border-green border-top-5 pl-1" id="accordionExample">
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-1">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-1" aria-expanded="true" aria-controls="collapse2-1">
+                                    How does the Jobium.com work?
+                                </button>
+                            </div>
+                            <div id="collapse2-1" class="collapse pr-7 show" aria-labelledby="heading2-1" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-2">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-2" aria-expanded="false" aria-controls="collapse2-2">
+                                    Do you offer non-profit and educational discounts?
+                                </button>
+                            </div>
+                            <div id="collapse2-2" class="collapse pr-7" aria-labelledby="heading2-2" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-3">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-3" aria-expanded="false" aria-controls="collapse2-3">
+                                    Can I cancel my subscription anytime?
+                                </button>
+                            </div>
+                            <div id="collapse2-3" class="collapse pr-7" aria-labelledby="heading2-3" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-4">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-4" aria-expanded="false" aria-controls="collapse2-4">
+                                    How does the Jobium.com work?
+                                </button>
+                            </div>
+                            <div id="collapse2-4" class="collapse pr-7" aria-labelledby="heading2-4" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-5">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-5" aria-expanded="false" aria-controls="collapse2-5">
+                                    How does the Jobium.com work?
+                                </button>
+                            </div>
+                            <div id="collapse2-5" class="collapse pr-7" aria-labelledby="heading2-5" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-6">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-6" aria-expanded="false" aria-controls="collapse2-6">
+                                    Do you offer non-profit and educational discounts?
+                                </button>
+                            </div>
+                            <div id="collapse2-6" class="collapse pr-7" aria-labelledby="heading2-6" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-7">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-7" aria-expanded="false" aria-controls="collapse2-7">
+                                  Can I cancel my subscription anytime?
+                                </button>
+                            </div>
+                            <div id="collapse2-7" class="collapse pr-7" aria-labelledby="heading2-7" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-8">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-8" aria-expanded="false" aria-controls="collapse2-8">
+                                    How does the Jobium.com work?
+                                </button>
+                            </div>
+                            <div id="collapse2-8" class="collapse pr-7" aria-labelledby="heading2-8" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom overflow-hidden">
+                            <div class="mb-0 border-bottom-0" id="heading2-9">
+                                <button class="btn-reset font-size-5 font-weight-semibold text-left px-0 pb-6 pt-7 accordion-trigger arrow-icon w-100 border-left-0 border-right-0 focus-reset mt-n2" type="button" data-toggle="collapse" data-target="#collapse2-9" aria-expanded="false" aria-controls="collapse2-9">
+                                    Do you offer non-profit and educational discounts?
+                                </button>
+                            </div>
+                            <div id="collapse2-9" class="collapse pr-7" aria-labelledby="heading2-9" data-parent="#accordionExample">
+                                <div class="mt-n3 font-size-4 text-gray font-weight-normal pb-7 pr-7 pt-6">
+                                    Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current
+                                    term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all
+                                    data will be deleted 60 days from the day your subscription becomes inactive.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- footer area function start -->
+{{Footer.render()}}
+<!-- footer area function end -->
+{% endblock %}

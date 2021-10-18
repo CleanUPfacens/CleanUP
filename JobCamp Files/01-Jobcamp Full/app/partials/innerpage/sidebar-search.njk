@@ -1,0 +1,109 @@
+{%macro render(options)%}
+{% import "components/checkbox-list.njk" as CheckBoxList %}
+<div class="widgets mb-11">
+    <h4 class="font-size-6 font-weight-semibold mb-6">Job Type</h4>
+    {{CheckBoxList.CheckBox({
+           "Checklist" : [
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Full Time"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Part Time"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Contract"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Internship"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Temporary"
+               }
+           ]
+
+       })}}
+</div>
+<div class="widgets mb-11 ">
+    <div class="d-flex align-items-center pr-15 pr-xs-0 pr-md-0 pr-xl-22">
+        <h4 class="font-size-6 font-weight-semibold mb-6 w-75">Salary Range</h4>
+        <!-- Range Slider -->
+        <div class="slider-price w-25 text-right mr-7">
+            <p class="font-weight-bold">
+                <input class="text-primary font-weight-semibold font-size-4 focus-reset" type="text" id="amount" readonly="">
+            </p>
+        </div>
+    </div>
+    <div class="graph text-center mx-0 mt-5 position-relative chart-postion">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="range-slider">
+        <div class="pm-range-slider"></div>
+    </div>
+</div>
+<div class="widgets mb-11">
+    <h4 class="font-size-6 font-weight-semibold mb-6">Experience Level </h4>
+    {{CheckBoxList.CheckBox({
+           "Checklist" : [
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "All"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Senior"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Mid"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Junior"
+               }
+           ]
+
+       })}}
+</div>
+<div class="widgets mb-11">
+    <h4 class="font-size-6 font-weight-semibold mb-6">Posted Time</h4>
+    {{CheckBoxList.CheckBox({
+           "Checklist" : [
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Anytime"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Last day"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Last 3 days"
+               },
+               {
+                   "checkID" : "CheckIDone",
+                   "title"   : "Last week"
+               }
+           ]
+
+       })}}
+</div>
+{% endmacro %}

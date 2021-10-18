@@ -1,0 +1,171 @@
+{
+"homeTwo":{
+  "featuredJob":[
+    {
+      "logo":"./image/l2/png/featured-job-logo-1.png",
+      "title":"UI/UX Designer",
+      "subtitle":"Apple INC",
+      "srange":"120-150K",
+      "tags":["Visual Design","Wireframing","Scrum"],
+      "widgets":[
+        {
+          "icon":"./image/svg/icon-loaction-pin-black.svg",
+          "text":"Berlyn, UK"
+        },
+        {
+          "icon":"./image/svg/icon-suitecase.svg",
+          "text":"Full-time"
+        },
+        {
+          "icon":"./image/svg/icon-clock.svg",
+          "text":"9d ago"
+        }
+      ]
+    },
+    {
+      "logo":"./image/l2/png/featured-job-logo-2.png",
+      "title":"UI/UX Designer",
+      "subtitle":"Apple INC",
+      "srange":"120-150K",
+      "tags":["Agile","Wireframing","Prototyping"],
+      "widgets":[
+        {
+          "icon":"./image/svg/icon-loaction-pin-black.svg",
+          "text":"Berlyn, UK"
+        },
+        {
+          "icon":"./image/svg/icon-suitecase.svg",
+          "text":"Full-time"
+        },
+        {
+          "icon":"./image/svg/icon-clock.svg",
+          "text":"9d ago"
+        }
+      ]
+    },
+    {
+      "logo":"./image/l2/png/featured-job-logo-3.png",
+      "title":"iOS Developer",
+      "subtitle":"Shopify",
+      "srange":"100-120K",
+      "tags":["Swift","Objective C","X Code"],
+      "widgets":[
+        {
+          "icon":"./image/svg/icon-loaction-pin-black.svg",
+          "text":"Berlyn, UK"
+        },
+        {
+          "icon":"./image/svg/icon-suitecase.svg",
+          "text":"Full-time"
+        },
+        {
+          "icon":"./image/svg/icon-clock.svg",
+          "text":"9d ago"
+        }
+      ]
+    },
+    {
+      "logo":"./image/l2/png/featured-job-logo-4.png",
+      "title":"Creative Director",
+      "subtitle":"Facebook",
+      "srange":"80-90K",
+      "tags":["Agile","Wireframing","Prototyping"],
+      "widgets":[
+        {
+          "icon":"./image/svg/icon-loaction-pin-black.svg",
+          "text":"Berlyn, UK"
+        },
+        {
+          "icon":"./image/svg/icon-suitecase.svg",
+          "text":"Full-time"
+        },
+        {
+          "icon":"./image/svg/icon-clock.svg",
+          "text":"9d ago"
+        }
+      ]
+    },
+    {
+      "logo":"./image/l2/png/featured-job-logo-5.png",
+      "title":"Software Engineer",
+      "subtitle":"Oculus",
+      "srange":"80-90K",
+      "tags":["C++","JavaScprit","ReactJS"],
+      "widgets":[
+        {
+          "icon":"./image/svg/icon-loaction-pin-black.svg",
+          "text":"Berlyn, UK"
+        },
+        {
+          "icon":"./image/svg/icon-suitecase.svg",
+          "text":"Full-time"
+        },
+        {
+          "icon":"./image/svg/icon-clock.svg",
+          "text":"9d ago"
+        }
+      ]
+    }
+  ],
+  "cardtwoSection" : [
+    {
+        "color"   : "blue",
+        "icon"    : "fa fa-briefcase",
+        "heading" : "Business Development",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "spray",
+        "icon"    : "fa fa-headset",
+        "heading" : "Customer Service",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "coral",
+        "icon"    : "fa fa-layer-group",
+        "heading" : "Development",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "red",
+        "icon"    : "fa fa-pen-nib",
+        "heading" : "Design",
+        "counter" : "415"
+
+    },
+
+    {
+        "color"   : "orange",
+        "icon"    : "fa fa-rocket",
+        "heading" : "Marketing & Management",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "yellow",
+        "icon"    : "fa fa-location-arrow",
+        "heading" : "Sales & Communication",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "turquoise",
+        "icon"    : "icon icon-sidebar-2",
+        "heading" : "Project Management",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "green",
+        "icon"    : "fa fa-user",
+        "heading" : "Human Resource ",
+        "counter" : "415"
+
+    }
+
+]
+}
+}

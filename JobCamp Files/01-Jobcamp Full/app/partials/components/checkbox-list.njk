@@ -1,0 +1,7 @@
+{%macro CheckBox(options)%}
+       <ul class="list-unstyled filter-check-list">
+    {% for list in options.Checklist %}
+       <li class="mb-2"><a href="#" class="toggle-item">{{list.title}}</a></li>
+    {% endfor %}
+       </ul>
+{% endmacro %}

@@ -1,0 +1,398 @@
+{
+  "searchTwo":{
+    "tabNav" : [
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-1.png",
+        "title":"Product Designer",
+        "subtitle":"AirBnb",
+        "srange":"80-90K PLN",
+        "tags":["Agile","Wireframing","Prototyping"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      },
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-2.png",
+        "title":"UI/UX Designer",
+        "subtitle":"Apple INC",
+        "srange":"120-150K",
+        "tags":["Visual Design","Wireframing","Scrum"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      },
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-3.png",
+        "title":"iOS Developer",
+        "subtitle":"Shopify",
+        "srange":"100-120K",
+        "tags":["Swift","Objective C","X Code"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      },
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-4.png",
+        "title":"Creative Director",
+        "subtitle":"Facebook",
+        "srange":"80-90K",
+        "tags":["Agile","Wireframing","Prototyping"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      },
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-5.png",
+        "title":"Software Engineer",
+        "subtitle":"Oculus",
+        "srange":"80-90K",
+        "tags":["C++","Java Scprit","React JS"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      },
+      {
+        "additionalOptions" :"hover-border-green",
+        "logo":"./image/l2/png/featured-job-logo-1.png",
+        "title":"Product Designer",
+        "subtitle":"AirBnb",
+        "srange":"80-90K",
+        "tags":["Agile","Wireframing","Prototyping"],
+        "widgets":[
+          {
+            "icon":"./image/svg/icon-loaction-pin-black.svg",
+            "text":"Berlyn, UK"
+          },
+          {
+            "icon":"./image/svg/icon-suitecase.svg",
+            "text":"Full-time"
+          },
+          {
+            "icon":"./image/svg/icon-clock.svg",
+            "text":"9d ago"
+          }
+        ]
+      }
+    ],
+    "tabContent":[
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-1.png",
+        "title" : "Product Designer",
+        "brandTitle" : "AirBnb",
+        "AddressText" : "777 Brockton Avenue, Abington MA 2351",
+        "moneyRange" : "80-90K PLN",
+        "jobType" : "Full-time",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["Slack", "Basic English", "Well Organized"],
+        "level" : "Project  Manangement",
+        "CompanySize" : "11-50 employees",
+        "PostDate" : "16 November 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "Editing",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Wire-framing",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "XD",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "User Persona",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Sketch",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      },
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-2.png",
+        "title" : "UI/UX Designer",
+        "brandTitle" : "Apple INC",
+        "AddressText" : "237 Princeton Avenue, Nottinghum MA 3714",
+        "moneyRange" : "120-150K PLN",
+        "jobType" : "Full-time",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["Creative Design", "Wireframing", "Scrum"],
+        "level" : "Senior Designer",
+        "CompanySize" : "11-35 employees",
+        "PostDate" : "11 November 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "Visual Design",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Wire-framing",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "XD",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "User Persona",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Sketch",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      },
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-3.png",
+        "title" : "iOS Developer",
+        "brandTitle" : "Shopify",
+        "AddressText" : "221B Baker Street, London",
+        "moneyRange" : "100-120K PLN",
+        "jobType" : "Remote",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["Zoom", "Basic English", "Punctual"],
+        "level" : "Project  Manangement",
+        "CompanySize" : "20-50 employees",
+        "PostDate" : "08 October 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "Swift ",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Objective C",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "X Code",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "WooCommerce",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Coding",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      },
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-4.png",
+        "title" : "Creative Director ",
+        "brandTitle" : "Facebook",
+        "AddressText" : "132 North Wellington Avenue, Seattle 1204",
+        "moneyRange" : "80-90K PLN",
+        "jobType" : "Part-time",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["Slack", "Wireframing", "Prototyping"],
+        "level" : "Project  Manangement",
+        "CompanySize" : "50-80 employees",
+        "PostDate" : "31 August 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "Agile",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Wire-framing",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Prototyping",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Slack",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Director",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      },
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-5.png",
+        "title" : "Software Engineer",
+        "brandTitle" : "Oculus",
+        "AddressText" : "Berlyn, Uk",
+        "moneyRange" : "120-150K PLN",
+        "jobType" : "Full-time",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["C++", "Programming", "Developer"],
+        "level" : "Junior Engineer",
+        "CompanySize" : "11-50 employees",
+        "PostDate" : "11 November 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "C++",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Java Scprit",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "React JS",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Vue",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Angular",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      },
+      {
+        "brandLogo" : "./image/l2/png/featured-job-logo-1.png",
+        "title" : "Product Designer",
+        "brandTitle" : "Apple INC",
+        "AddressText" : "170B Bashabo Kodomtola, Dhaka",
+        "moneyRange" : "80-100K PLN",
+        "jobType" : "Full-time",
+        "officeType" : "B2B & B2C",
+        "softSkills" : ["Design", "Communication", "Marketing"],
+        "level" : "Project  Manangement",
+        "CompanySize" : "11-50 employees",
+        "PostDate" : "11 November 2020",
+        "taglist" : [
+    
+            {
+              "tagName" : "Agile",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Wire-framing",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Prototyping",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "User Persona",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            },
+            {
+              "tagName" : "Sketch",
+              "BGcolor" : "polar",
+              "TXTcolor" : "black-2"
+            }
+    
+        ]
+      
+      }
+    ]
+  }
+}

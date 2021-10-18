@@ -1,0 +1,266 @@
+{% extends "template.njk" %}
+{# Import Section #}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/back-button.njk" as BackButton %}
+{% import "innerpage/sidebar-author.njk" as SidebarAuthor %}
+{% import "homeTwo/featuredJob.njk" as featuredJobPromo %}
+{% import "innerpage/sidebar-team-list.njk" as SidebarTeamList %}
+{% import "innerpage/small-items/tag-items.njk" as TagsListOne %}
+{% import "components/footer/footer.njk" as Footer %}
+
+<!-- header start start -->
+{% set page_data = {
+  page_title: "landing-1"
+ 
+} 
+%}
+<!-- header end -->
+
+<!-- block main start -->
+{% block main %}
+
+  <!-- Header start  -->
+  {{Header.render(headerLoggedIn)}}
+  <!-- Header end -->
+
+  <!-- Main Content Start -->
+  <div class="bg-default-2 pt-22 pt-lg-25 pb-13 pb-xxl-32">
+    <div class="container">
+      <!-- back Button -->
+      <div class="row justify-content-center">
+        <div class="col-12 dark-mode-texts">
+          {{BackButton.render({
+              "text" : "Back",
+              "textColor" : "gray",
+              "link":"dashboard-main.html"
+          })}}
+        </div>
+      </div>
+      <!-- back Button End -->
+      <div class="row">
+        <!-- Left Sidebar Start -->
+        <div class="col-12 col-xxl-3 col-lg-4 col-md-5 mb-11 mb-lg-0">
+          {{SidebarAuthor.render()}}
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Middle Content -->
+        <div class="col-12 col-xxl-6 col-lg-8 col-md-7 order-2 order-xl-1">
+          <div class="bg-white rounded-4 shadow-9">
+            <!-- Tab Section Start -->
+            <ul class="nav border-bottom border-mercury pl-12" id="myTab" role="tablist">
+              <li class="tab-menu-items nav-item pr-12">
+                <a class="active text-uppercase font-size-3 font-weight-bold text-default-color py-3" id="home-tab"
+                data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
+              </li>
+              <li class="tab-menu-items nav-item pr-12">
+                <a class="text-uppercase font-size-3 font-weight-bold text-default-color py-3" id="profile-tab"
+                data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Contact</a>
+              </li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Excerpt Start -->
+                <div class="pr-xl-0 pr-xxl-14 p-5 px-xs-12 pt-7 pb-5">
+                  <h4 class="font-size-6 mb-7 mt-5 text-black-2 font-weight-semibold">About</h4>
+                  <p class="font-size-4 mb-8">A talented professional with an academic background in IT and proven
+                  commercial development experience as C++ developer since 1999. Has a sound knowledge of the software
+                  development life cycle. Was involved in more than 140 software development outsourcing projects.</p>
+                  <p class="font-size-4 mb-8">Programming Languages: C/C++, .NET C++, Python, Bash, Shell, PERL, Regular
+                  expressions, Python, Active-script.</p>
+
+                </div>
+                <!-- Excerpt End -->
+                <!-- Skills -->
+                <div class="border-top pr-xl-0 pr-xxl-14 p-5 pl-xs-12 pt-7 pb-5">
+                  <h4 class="font-size-6 mb-7 mt-5 text-black-2 font-weight-semibold">Skills</h4>
+                  {{TagsListOne.render({
+                      "Tags" : [
+
+                          {
+                            "tagName" : "Agile",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "Wireframing",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "Prototyping",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "Information",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "Waterfall Model",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "New Layout",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          },
+                          {
+                            "tagName" : "Browsing",
+                            "BGcolor" : "polar",
+                            "TXTcolor" : "black-2"
+                          }
+
+                      ]
+
+                  })}}
+
+                </div>
+                <!-- Skills End -->
+                <!-- Card Section Start -->
+                <div class="border-top p-5 pl-xs-12 pt-7 pb-5">
+                  <h4 class="font-size-6 mb-7 mt-5 text-black-2 font-weight-semibold">Work Exprerience</h4>
+
+                  <!-- Single Card -->
+                  <div class="w-100">
+                    <div class="d-flex align-items-center pr-11 mb-9 flex-wrap flex-sm-nowrap">
+                      <div class="square-72 d-block mr-8 mb-7 mb-sm-0">
+                        <img src="./image/l2/png/featured-job-logo-1.png" alt="">
+                      </div>
+                      <div class="w-100 mt-n2">
+                        <h3 class="mb-0">
+                          <a class="font-size-6 text-black-2 font-weight-semibold" href="#">Lead Product Designer</a>
+                        </h3>
+                        <a href="#" class="font-size-4 text-default-color line-height-2">Airabnb</a>
+                        <div class="d-flex align-items-center justify-content-md-between flex-wrap">
+                          <a href="" class="font-size-4 text-gray mr-5">Jun 2017 - April 2020- 3 years</a>
+                          <a href="" class="font-size-3 text-gray">
+                            <span class="mr-4" style="margin-top: -2px"><img src="./image/svg/icon-loaction-pin-black.svg" alt=""></span>New York, USA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Card End -->
+
+                  <!-- Single Card -->
+                  <div class="w-100">
+                    <div class="d-flex align-items-center pr-11 mb-9 flex-wrap flex-sm-nowrap">
+                      <div class="square-72 d-block mr-8 mb-7 mb-sm-0">
+                        <img src="./image/l1/png/feature-brand-1.png" alt="">
+                      </div>
+                      <div class="w-100 mt-n2">
+                        <h3 class="mb-0">
+                          <a class="font-size-6 text-black-2 font-weight-semibold" href="#">Senior UI/UX Designer</a>
+                        </h3>
+                        <a href="#" class="font-size-4 text-default-color line-height-2">Google Inc</a>
+                        <div class="d-flex align-items-center justify-content-md-between flex-wrap">
+                          <a href="" class="font-size-3 text-gray mr-5">Jun 2017 - April 2020- 3 years</a>
+                          <a href="" class="font-size-3 text-gray">
+                            <span class="mr-4" style="margin-top: -2px"><img src="./image/svg/icon-loaction-pin-black.svg" alt=""></span>New York, USA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Card End -->
+                </div>
+                <!-- Card Section End -->
+                <!-- Card Section Start -->
+                <div class="border-top p-5 pl-xs-12 pt-7 pb-5">
+                  <h4 class="font-size-6 mb-7 mt-5 text-black-2 font-weight-semibold">Education</h4>
+
+                  <!-- Single Card -->
+                  <div class="w-100">
+                    <div class="d-flex align-items-center pr-11 mb-9 flex-wrap flex-sm-nowrap">
+                      <div class="square-72 d-block mr-8 mb-7 mb-sm-0">
+                        <img src="./image/svg/harvard.svg" alt="">
+                      </div>
+                      <div class="w-100 mt-n2">
+                        <h3 class="mb-0">
+                          <a class="font-size-6 text-black-2" href="#">Masters in Art Design</a>
+                        </h3>
+                        <a href="#" class="font-size-4 text-default-color line-height-2">Harvard University</a>
+                        <div class="d-flex align-items-center justify-content-md-between flex-wrap">
+                          <a href="" class="font-size-3 text-gray mr-5">Jun 2017 - April 2020- 3 years</a>
+                          <a href="" class="font-size-3 text-gray">
+                            <span class="mr-4" style="margin-top: -2px"><img src="./image/svg/icon-loaction-pin-black.svg" alt=""></span>Brylin, USA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Card End -->
+
+                  <!-- Single Card -->
+                  <div class="w-100">
+                    <div class="d-flex align-items-center pr-11 mb-9 flex-wrap flex-sm-nowrap">
+                      <div class="square-72 d-block mr-8 mb-7 mb-sm-0">
+                        <img src="./image/svg/mit.svg" alt="">
+                      </div>
+                      <div class="w-100 mt-n2">
+                        <h3 class="mb-0">
+                          <a class="font-size-6 text-black-2" href="#">Bachelor in Software Engineering </a>
+                        </h3>
+                        <a href="#" class="font-size-4 text-default-color line-height-2">Manipal Institute of Technology</a>
+                        <div class="d-flex align-items-center justify-content-md-between flex-wrap">
+                          <a href="" class="font-size-3 text-gray mr-5">Fed 2012 - April 2016 - 4 years</a>
+                          <a href="" class="font-size-3 text-gray">
+                            <span class="mr-4" style="margin-top: -2px"><img src="./image/svg/icon-loaction-pin-black.svg" alt=""></span>New York, USA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Card End -->
+                </div>
+                <!-- Card Section End -->
+              </div>
+
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <!-- Excerpt Start -->
+                <div class="pr-xl-11 p-5 pl-xs-12 pt-9 pb-11">
+                    <form action="/">
+                      <div class="row">
+                        <div class="col-12 mb-7">
+                          <label for="name3" class="font-size-4 font-weight-semibold text-black-2 mb-5 line-height-reset">Your Name</label>
+                          <input id="name3" type="text" class="form-control" placeholder="Jhon Doe">
+                        </div>
+                        <div class="col-lg-6 mb-7">
+                          <label for="email3" class="font-size-4 font-weight-semibold text-black-2 mb-5 line-height-reset">E-mail</label>
+                          <input id="email3" type="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                        <div class="col-lg-6 mb-7">
+                          <label for="subject3" class="font-size-4 font-weight-semibold text-black-2 mb-5 line-height-reset">Subject</label>
+                          <input id="subject3" type="text" class="form-control" placeholder="Special contract">
+                        </div>
+                        <div class="col-lg-12 mb-7">
+                          <label for="message3" class="font-size-4 font-weight-semibold text-black-2 mb-5 line-height-reset">Message</label>
+                          <textarea name="message" id="message3" placeholder="Type your message" class="form-control h-px-144"></textarea>
+                        </div>
+                        <div class="col-lg-12 pt-4">
+                          <button class="btn btn-primary text-uppercase w-100 h-px-48">Send Now</button>
+                        </div>
+                      </div>
+                    </form>
+
+                </div>
+                <!-- Excerpt End -->
+              </div>
+            </div>
+            <!-- Tab Content End -->
+            <!-- Tab Section End -->
+          </div>
+        </div>
+        <!-- Middle Content -->
+        <!-- Right Sidebar Start -->
+        <div class="col-12 col-xxl-3 col-md-4 offset-xxl-0 offset-lg-4 offset-md-5 order-3 order-xl-2 mt-xxl-0 mt-md-12">
+          {{SidebarTeamList.render()}}
+        </div>
+        <!-- Right Sidebar End -->
+      </div>
+    </div>
+  </div>
+  <!-- Main Content end -->
+  <!-- footer area function start -->
+  {{Footer.render()}}
+  <!-- footer area function end -->
+{% endblock %}

@@ -1,0 +1,15 @@
+{% macro ServicesOne(options) %}
+    <!-- Single Services -->
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 col-xs-8">
+        <div class="px-xl-7 px-xxl-12 pt-5 pb-3 pb-lg-9 text-center">
+            <div class="square-92 rounded-4 bg-{{options.color}} text-white font-size-8 mx-auto shadow-{{options.color}} mb-11">
+                <img src="{{options.icon}}" alt="">
+            </div>
+            <div class="services-content">
+                <h3 class="font-size-6 mb-7">{{options.title}}</h3>
+                <p class="font-size-4 text-default-color">{{options.content}}</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Single Services -->
+{% endmacro %}

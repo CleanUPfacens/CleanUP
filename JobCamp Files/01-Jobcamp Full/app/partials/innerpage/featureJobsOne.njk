@@ -1,0 +1,21 @@
+{% macro render(options) %}
+    {% import "components/Cards/cards.njk" as innerJobCard %}
+    <div class="pt-6">
+        <div class="row justify-content-center">
+            {% for data in options.InnerfeatureJob %}
+                <div class="col-12 col-lg-6">
+                    {{innerJobCard.FeaturecardOne(
+                       {
+                         "BrandImage" : data.BrandImage,
+                         "BrandName" : data.BrandName,
+                         "JobTitle" : data.JobTitle,
+                         "jobDetails" : data.jobDetails,
+                         "tags":data.tags
+                     }
+                )}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endmacro %}

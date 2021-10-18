@@ -1,0 +1,92 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Cards/cards.njk" as Card %}
+{% import "innerpage/sidebar-dashboard.njk" as Sidebar %}
+{% import "components/modals/modal-employe-profile.njk" as Profile %}
+
+
+{% set site_wrapper_class = "bg-default-2 min-h-100vh" %}
+
+<!-- block main start -->
+{% block main %}
+
+{% set page_data = {
+  page_title: "landing-1"
+} 
+%}
+{{Header.render(headerLoggedInDashboard)}}
+{{Sidebar.render("jobs")}}
+<div class="dashboard-main-container mt-25 mt-lg-31" id="dashboard-body">
+  <div class="container">
+
+    <div class="mb-18">
+      <div class="row mb-11 align-items-center">
+        <div class="col-lg-6 mb-lg-0 mb-4">
+          <h3 class="font-size-6 mb-0">Posted Jobs (4)</h3>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex flex-wrap align-items-center justify-content-lg-end">
+            <p class="font-size-4 mb-0 mr-6 py-2">Filter by Job:</p>
+            <div class="h-px-48">
+              <select name="country" id="country" class="nice-select pl-7 h-100 arrow-3 arrow-3-black min-width-px-273 font-weight-semibold text-black-2">
+                <option value="" data-display="Product Designer">Full-Time</option>
+                <option value="">Part Time</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white shadow-8 pt-7 rounded pb-9 px-11">
+        <div class="table-responsive ">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="pl-0 border-0 font-size-4 font-weight-normal">Name</th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal">Job Type</th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal">City</th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal">Created on</th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal">Total Applicants</th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal"></th>
+                <th scope="col" class="pl-4 border-0 font-size-4 font-weight-normal"></th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              {% for item in dashboard.tableArrayTwo %}
+              <tr class="border border-color-2">
+                <th scope="row" class="pl-6 border-0 py-7 min-width-px-235">
+                  <div class="">
+                    <a href="jobdetails.html" class="font-size-4 mb-0 font-weight-semibold text-black-2">{{item.name}}</a>
+                  </div>
+                </th>
+                <td class="table-y-middle py-7 min-width-px-135">
+                  <h3 class="font-size-4 font-weight-normal text-black-2 mb-0">{{item.type}}</h3>
+                </td>
+                <td class="table-y-middle py-7 min-width-px-125">
+                  <h3 class="font-size-4 font-weight-normal text-black-2 mb-0">{{item.city}}</h3>
+                </td>
+                <td class="table-y-middle py-7 min-width-px-155">
+                  <h3 class="font-size-4 font-weight-normal text-black-2 mb-0">{{item.date}}</h3>
+                </td>
+                <td class="table-y-middle py-7 min-width-px-205">
+                  <h3 class="font-size-4 font-weight-bold text-black-2 mb-0">{{item.number}}</h3>
+                </td>
+                <td class="table-y-middle py-7 min-width-px-80">
+                    <a href="" class="font-size-3 font-weight-bold text-green text-uppercase">Edit</a>
+                </td>
+                <td class="table-y-middle py-7 min-width-px-100">
+                    <a href="" class="font-size-3 font-weight-bold text-red-2 text-uppercase">Delete</a>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{Profile.render()}}
+{% endblock %}

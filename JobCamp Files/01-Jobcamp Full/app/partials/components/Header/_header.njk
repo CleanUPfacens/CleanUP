@@ -1,0 +1,144 @@
+{#  #}
+  
+{#
+==========================================
+Available variables
+========================================== 
+|  root: "./",
+|  elmRoot: "./",
+|  count: "stringNumber",
+|  additional_header_class:"string",
+|  absolute_header: bool,
+|  sticky_header :bool,
+|  mobile_sticky: bool,
+|  container_fluid : bool,
+|  container_fluid_class : "string",
+|  hideMegamenu : bool,
+|  dropDownStyleTwo : bool,
+|  header_button_custom : HTML,
+|  header_button : HTML,
+|  additional_button_classes : "string",
+|  header_double_button : bool,
+|  additional_button_classes : "string",
+|  additional_db_classes : "string",
+|  header_button_class_1 : "string",
+|  header_button_text_1 : "string",
+|  header_button_class_2 : "string",
+|  header_button_text_2 : "string",
+----------------------------------------
+#}
+
+{% macro render( settings,count) %}
+{% import "components/Header/_menu.njk" as Menu %}
+{% import "components/modals/modal-login.njk" as Login %}
+{% import "components/modals/modal-signup.njk" as SignUp %}
+  <!-- Header Area -->
+<header class="site-header{{ ' ' + settings.additional_header_class if settings.additional_header_class }}{{ ' site-header--absolute' if settings.absolute_header}}{{ ' site-header--sticky' if settings.sticky_header}}{{ ' mobile-sticky-enable' if settings.mobile_sticky}}">
+  <div class="container{{ '-fluid' if  settings.container_fluid}}{{ '-fluid' if  settings.container_fluid}}{{settings.container_fluid_class if  settings.container_fluid_class}}">
+    <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0 py-0">
+      {#
+      <!-- Brand Logo-->
+      <div class="brand-logo">
+        <a href="./index.html">
+
+          <!-- light version logo (logo must be black)-->
+          <img src="{{ settings.root }}{% if not settings.logo %}image/logo-main.png{% else %}settings.logo {% endif %}
+            " alt="">
+        </a>
+      </div>
+      
+      #}
+      <!-- Brand Logo-->
+      <div class="brand-logo">
+        <a href="./index.html">
+
+          <!-- light version logo (logo must be black)-->
+          <img src="{{ settings.root }}image/logo-main-black.png" alt="" class="light-version-logo default-logo">
+
+          <!-- Dark version logo (logo must be White)-->
+          <img src="{{settings.root}}image/logo-main-white.png" alt="" class="dark-version-logo">
+
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mobile-menu{{count}}">
+        <div class="navbar-nav-wrapper">
+          {{Menu.render(settings.root,settings.elmRoot, settings.hideMegamenu,settings.dropDownStyleTwo)}}
+        </div>
+        <button class="d-block d-lg-none offcanvas-btn-close focus-reset" type="button" data-toggle="collapse" data-target="#mobile-menu{{count}}" aria-controls="mobile-menu{{count}}" aria-expanded="true" aria-label="Toggle navigation">
+          <i class="gr-cross-icon"></i>
+        </button>
+      </div>
+      {% if  settings.header_button_custom %}
+        {{ settings.header_button_custom | safe}}
+      {% endif %}
+      {% if  settings.header_button %}
+      <div class="header-btn {{  settings.additional_button_classes}}">
+        <a class="btn {{ settings.header_button_class}}" href="#">
+          {{ settings.header_button_text}}
+        </a>
+      </div>
+      {% endif %}
+      {% if  settings.header_double_button %}
+      <div class="header-btns {{  settings.additional_db_classes}}">
+        <a class="{{ settings.header_button_class_1}}" href="javacript:"  data-toggle="modal" data-target="#login">
+          {{ settings.header_button_text_1}}
+        </a>
+        <a class="{{ settings.header_button_class_2}}" href="javacript:"  data-toggle="modal" data-target="#signup">
+          {{ settings.header_button_text_2}}
+        </a>
+      </div>
+      {% endif %}
+      {% if  settings.loggedIn %}
+        <div class="header-btn-devider ml-auto ml-lg-5 pl-2 d-none d-xs-flex align-items-center">
+          <div>
+            <a href="#" class="px-3 ml-7 font-size-7 notification-block flex-y-center position-relative">
+              <i class="fas fa-bell heading-default-color"></i>
+              <span class="font-size-3 count font-weight-semibold text-white bg-primary circle-24 border border-width-3 border border-white">3</span>
+            </a>
+          </div>
+          <div>
+            <div class="dropdown show-gr-dropdown py-5">
+              <a class="proile media ml-7 flex-y-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="circle-40">
+                  <img src="./image/header-profile.png" alt="">
+                </div>
+                <i class="fas fa-chevron-down heading-default-color ml-6"></i>
+              </a>
+              <div class="dropdown-menu gr-menu-dropdown dropdown-right border-0 border-width-2 py-2 w-auto bg-default" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item py-2 font-size-3 font-weight-semibold line-height-1p2 text-uppercase" href="dashboard-settings.html">Settings </a>
+                <a class="dropdown-item py-2 font-size-3 font-weight-semibold line-height-1p2 text-uppercase" href="dashboard-main.html">Edit Profile</a>
+                <a class="dropdown-item py-2 text-red font-size-3 font-weight-semibold line-height-1p2 text-uppercase" href="#">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      
+        <!-- Mobile Menu Hamburger-->
+      <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu{{count}}" aria-controls="mobile-menu{{count}}" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+        <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </span>
+      </button>
+      <!--/.Mobile Menu Hamburger Ends-->
+      
+    </nav>
+  </div>
+</header>
+<!-- navbar-{{ settings.navbar_mode}} -->
+
+{% if not settings.loggedIn %}
+        {{Login.render()}}
+        {{SignUp.render()}}
+{% endif %}
+{% endmacro %}
+
+
+
+
+
+

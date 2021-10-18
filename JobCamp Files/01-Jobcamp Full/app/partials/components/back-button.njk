@@ -1,0 +1,7 @@
+{% macro render(options) %}
+        <div class="mb-9">
+          <a class="d-flex align-items-center ml-4" {% if options.modalBack %} href="javacript:" data-dismiss="modal" {% else %} href="{{options.link}}" {% endif %}> <i
+              class="icon icon-small-left bg-white circle-40 mr-5 font-size-7 text-black font-weight-bold shadow-8">
+            </i><span class="text-uppercase font-size-3 font-weight-bold text-{{options.textColor}}">{{options.text}}</span></a>
+        </div>
+{% endmacro %}

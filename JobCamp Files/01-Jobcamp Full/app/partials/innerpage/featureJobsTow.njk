@@ -1,0 +1,15 @@
+{% macro render(options) %}
+{% import "components/Cards/cards.njk" as Card %}
+{% for data in options.featureCardData %}
+        <div class="mb-8">
+          {{Card.FeatureCardTwo({
+            "logo":data.logo,
+            "title":data.title,
+            "subtitle":data.subtitle,
+            "srange":data.srange,
+            "tags":data.tags,
+            "widgets":data.widgets
+          })}}
+        </div>
+        {% endfor %}
+{% endmacro %}

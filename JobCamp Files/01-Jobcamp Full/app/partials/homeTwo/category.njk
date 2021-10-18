@@ -1,0 +1,48 @@
+{% macro render(options) %}
+{% import "components/Cards/cards.njk" as Card2 %}
+{% import "homeTwo/company.njk" as Brand1Section %}
+<div class="pb-13 pb-lg-25 bg-gradient-2">
+
+<!-- Company Area Start -->
+  {{Brand1Section.render()}}
+  <!-- Company Area End -->
+  
+    <div class="">
+    <div class="container">
+    <hr class="pt-13 pt-lg-20">
+        <!-- Section Top -->
+        <div class="row align-items-center justify-content-center">
+            <!-- Section Title -->
+            <div class="col-12 col-xl-6 col-lg-7 col-md-9">
+                <div class="text-center mb-12 mb-lg-17">
+                    <h2 class="font-size-10 font-weight-bold mb-8">Explore by category</h2>
+                    <p class="font-size-5 px-5 px-lg-7 px-xl-9 px-xxl-15 mb-6">Leverage agile frameworks to provide a
+                        robust synopsis for high level overviews to start.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Top -->
+        <div class="row justify-content-center"  data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+
+            {% for data in options.cardtwoSection %}
+            {{Card2.cardtwo(
+                {
+                   "color"   : data.color,
+                   "icon"    : data.icon, 
+                   "heading" : data.heading, 
+                   "counter" : data.counter
+                }
+                )}}
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center pt-5 pt-lg-13">
+                    <a class="btn btn-outline-black-2 btn-lg text-uppercase" href="#">Explore All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+</div>
+{% endmacro %}}

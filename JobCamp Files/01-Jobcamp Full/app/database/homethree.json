@@ -1,0 +1,176 @@
+{
+"homeThree":{
+    
+  "featuredJob":[
+    {
+      "logo":"./image/svg/icon-leaf.svg",
+      "bookmarked":true,
+      "logoBg":"pink",
+      "title":"Full-Stack Developer",
+      "subtitle":"Leaf.co",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"New York",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Full-time",
+          "color":"orange"
+        }
+      ]
+    },
+    {
+      "logo":"./image/svg/text-Fimize.svg",
+      "logoBg":"indigo",
+      "title":"Senior Marketing Expert",
+      "subtitle":"Fimize",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"London",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Full-time",
+          "color":"orange"
+        }
+      ]
+    },
+    {
+      "logo":"./image/svg/icon-shark-2.svg",
+      "logoBg":"regent",
+      "title":"3D Artist",
+      "subtitle":"Shark",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"California",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Remote",
+          "color":"orange"
+        }
+      ]
+    },
+    {
+      "logo":"./image/svg/text-K.svg",
+      "logoBg":"yellow-2",
+      "title":"Content Marketing Lead",
+      "subtitle":"Klara",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"Berlin",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Full-time",
+          "color":"orange"
+        }
+      ]
+    },
+    {
+      "logo":"./image/svg/icon-thunder.svg",
+      "logoBg":"orange-2",
+      "title":"Product Manager",
+      "subtitle":"Thunder",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"Berlin",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Full-time",
+          "color":"orange"
+        }
+      ]
+    },
+    {
+      "logo":"./image/svg/text-asios.svg",
+      "title":"Front-end Developer",
+      "logoBg":"helio",
+      "subtitle":"Shark",
+      "tags":[
+        {
+          "icon":"icon icon-pin-3",
+          "text":"New York",
+          "color":"denim"
+        },
+        {
+          "icon":"fa fa-briefcase",
+          "text":"Full-time",
+          "color":"orange"
+        }
+      ]
+    }
+  ],
+  "cardtwoSection" : [
+    {
+        "color"   : "blue",
+        "icon"    : "fa fa-briefcase",
+        "heading" : "Business Development",
+        "counter" : "415"
+
+    },
+    {
+        "color"   : "spray",
+        "icon"    : "fa fa-headset",
+        "heading" : "Customer Service",
+        "counter" : "235"
+
+    },
+    {
+        "color"   : "coral",
+        "icon"    : "fa fa-layer-group",
+        "heading" : "Development",
+        "counter" : "624"
+
+    },
+    {
+        "color"   : "red",
+        "icon"    : "fa fa-pen-nib",
+        "heading" : "Design",
+        "counter" : "174"
+
+    },
+
+    {
+        "color"   : "orange",
+        "icon"    : "fa fa-rocket",
+        "heading" : "Design",
+        "counter" : "174"
+
+    },
+    {
+        "color"   : "yellow",
+        "icon"    : "fa fa-location-arrow",
+        "heading" : "Design",
+        "counter" : "174"
+
+    },
+    {
+        "color"   : "turquoise",
+        "icon"    : "icon icon-sidebar-2",
+        "heading" : "Project Management",
+        "counter" : "162"
+
+    },
+    {
+        "color"   : "green",
+        "icon"    : "fa fa-user",
+        "heading" : "Human Resource ",
+        "counter" : "84"
+
+    }
+
+]
+}
+}

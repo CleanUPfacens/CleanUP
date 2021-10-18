@@ -1,0 +1,41 @@
+{% macro render(options) %}
+{% import "components/Cards/cards.njk" as JobCard %}
+
+<div class="pt-11 pt-lg-27 pb-7 pb-lg-26 bg-black-2 dark-mode-texts">
+    <div class="container">
+        <!-- Section Top -->
+        <div class="row align-items-center pb-14">
+            <!-- Section Title -->
+            <div class="col-12 col-xl-6 col-lg-6">
+                <div class="text-center text-lg-left mb-13 mb-lg-0">
+                    <h2 class="font-size-9 font-weight-bold">Featured Jobs</h2>
+                </div>
+            </div>
+            <!-- Section Button -->
+            <div class="col-12 col-xl-6 col-lg-6">
+                <div class="text-center text-lg-right">
+                    <a class="btn btn-outline-white text-uppercase" href="#">Explore All</a>
+                </div>
+            </div>
+            <!-- Section Button End -->
+        </div>
+        <!-- End Section Top -->
+        <div class="row justify-content-center">
+            {% for data in options.featureJobSection1 %}
+            <div class="col-12 col-lg-4 col-md-6 px-xxl-7" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                {{JobCard.FeaturecardOne(
+                    {
+                        "BrandImage" : data.BrandImage,
+                        "BrandName" : data.BrandName,
+                        "JobTitle" : data.JobTitle,
+                        "jobDetails" : data.jobDetails,
+                        "tags":data.tags
+                }
+                )}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

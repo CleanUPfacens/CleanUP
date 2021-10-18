@@ -1,0 +1,41 @@
+{% macro render(options) %}
+    <section class="bg-green position-relative">
+        
+        <div class="w-lg-50 ml-lg-auto">
+            {% set Gimages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25] %}
+            <!-- gallery start -->
+            <div class="gallery"  data-aos="fade-left" data-aos-duration="800" data-aos-delay="300" data-aos-once="true"> <!-- this content will absolute from right and top -->
+                {% for item in Gimages %}
+                <div class="single-item">
+                    <img src="image/l2/jpg/gallery-img{{item}}.jpg" alt="">
+                </div>
+                {% endfor %}
+            </div>
+            <!-- gallery end -->
+        </div>
+        <div class="container pos-lg-abs-c pt-11 pb-13 py-lg-0">
+            <div class="row">
+                <div class="col-xxl-5 col-lg-6 col-md-8 mx-auto mx-lg-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                    <!-- content-2 start -->
+                    <div class="content-2 pr-lg-5 pr-xl-18 pr-xxl-10 text-center text-lg-left">
+                        <!-- content-2 section title start -->
+                        <p class="text-white font-size-4 font-weight-semibold mb-8">
+                            Looking for an expert for your company?
+                        </p>
+                        <h2 class="font-size-9 text-white mb-8">
+                            Get applications from the world best talents.
+                        </h2>
+                        <p class="text-white font-size-5 mb-12">
+                            Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. 
+                            Override the digital divide with additional clickthroughs from DevOps. 
+                        </p>
+                        <!-- content-2 section title end -->
+                        <!-- content-2 btn start -->
+                        <a class="btn btn-white btn-h-60 text-black-2 w-180 rounded-5 text-uppercase mx-auto mx-lg-0" href="#">Post a Job</a>
+                        <!-- content-2 btn end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endmacro %}

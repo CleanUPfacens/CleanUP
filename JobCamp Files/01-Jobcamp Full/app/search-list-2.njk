@@ -1,0 +1,155 @@
+{% extends "template.njk" %}
+{# Import Section #}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Cards/cards.njk" as innerJobCard %}
+{% import "components/Cards/jobdetailsCard.njk" as JobDetailsSection %}
+{% import "components/footer/footer.njk" as Footer %}
+
+<!-- header start start -->
+{% set page_data = {
+  page_title: "landing-1"
+} 
+%}
+<!-- header start end -->
+
+<!-- block main start -->
+{% block main %}
+
+<!-- Header start  -->
+{{Header.render(headerNormal)}}
+<!-- Header end -->
+
+<!-- Main Content Start -->
+<div class="bg-black-2 mt-15 mt-lg-22 pt-18 pt-lg-13 pb-13">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- form -->
+        <form action="/" class="search-form">
+          <div class="filter-search-form-2 bg-white rounded-sm shadow-7 pr-6 py-7 pl-6  search-1-adjustment">
+            <div class="filter-inputs">
+              <div class="form-group position-relative w-xl-50">
+                <input class="form-control focus-reset pl-13" type="text" id="keyword"
+                  placeholder="Type Job title, keywords">
+                <span class="h-100 w-px-50 pos-abs-tl d-flex align-items-center justify-content-center font-size-6"><i
+                    class="icon icon-zoom-2 text-primary font-weight-bold"></i></span>
+              </div>
+              <!-- .select-city starts -->
+              <div class="form-group position-relative w-lg-50">
+                <select name="country" id="country" class="nice-select font-size-4 pl-13 h-100 arrow-3">
+                  <option data-display="City, state, zip code or (Remote)">City, state, zip code or (Remote) </option>
+                  <option value="">United States of America</option>
+                  <option value="">United Arab Emirates</option>
+                  <option value="">Bangladesh</option>
+                  <option value="">Pakistan</option>
+                </select>
+                <span class="h-100 w-px-50 pos-abs-tl d-flex align-items-center justify-content-center font-size-6"><i
+                    class="icon icon-pin-3 text-primary font-weight-bold"></i></span>
+              </div>
+              <!-- ./select-city ends -->
+            </div>
+            <div class="button-block">
+              <button
+                class="btn btn-primary btn-medium line-height-reset h-100 btn-submit w-100 text-uppercase">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-default-1 pt-9 pb-13 pb-xl-30 pb-13 position-relative overflow-hidden">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-12">
+        <h2 class="font-size-8 mb-6">You’re searching "UI Designer"</h2>
+        <form class="mb-8" action="index.html">
+          <div class="search-filter from-group d-flex align-items-center flex-wrap">
+            <div class="mr-5 mb-5">
+              <select name="country" id="country" class="nice-select font-size-4 text-black-2 arrow-4-black mr-5 rounded-0">
+                <option data-display="Job Type">Job Type</option>
+                <option value="">United States of America</option>
+                <option value="">United Arab Emirates</option>
+                <option value="">Bangladesh</option>
+                <option value="">Pakistan</option>
+              </select>
+            </div>
+            <div class="mr-5 mb-5">
+              <select name="country" id="country" class="nice-select font-size-4 text-black-2 arrow-4-black mr-5 rounded-0">
+                <option data-display="Salary Range">Salary Range</option>
+                <option value="">United States of America</option>
+                <option value="">United Arab Emirates</option>
+                <option value="">Bangladesh</option>
+                <option value="">Pakistan</option>
+              </select>
+            </div>
+            <div class="mr-5 mb-5">
+              <select name="country" id="country" class="nice-select font-size-4 text-black-2 arrow-4-black mr-5 rounded-0">
+                <option data-display="Experience Level ">Experience Level </option>
+                <option value="">United States of America</option>
+                <option value="">United Arab Emirates</option>
+                <option value="">Bangladesh</option>
+                <option value="">Pakistan</option>
+              </select>
+            </div>
+            <div class="mr-5 mb-5">
+              <select name="country" id="country" class="nice-select font-size-4 text-black-2 arrow-4-black mr-5 rounded-0">
+                <option data-display="Posted Time">Posted Time</option>
+                <option value="">United States of America</option>
+                <option value="">United Arab Emirates</option>
+                <option value="">Bangladesh</option>
+                <option value="">Pakistan</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex align-items-center justify-content-between mb-6">
+          <h5 class="font-size-4 font-weight-normal text-gray">Showing
+            <span class="text-black-2">120</span> matched jobs</h5>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center position-static">
+      <div class="col-12 col-xxl-8 col-xl-7 col-lg-10">
+        <!-- Left Section -->
+        <div class="Left">
+            <div class="justify-content-center search-nav-tab nav nav-tabs border-bottom-0" id="search-nav-tab" role="tablist">
+        
+              {% for data in searchTwo.tabNav %}
+                <a class="mb-8 p-0 w-100 {% if loop.index == 1 %}active{% endif %} nav-link" id="tab-nav-{{ loop.index }}" data-toggle="tab" href="#tab-pane-{{ loop.index }}" role="tab" aria-controls="tab-pane-{{ loop.index }}" aria-selected="{% if loop.index == 1 %}true {% else %} false {% endif %}">
+                  {{innerJobCard.FeatureCardTwo(data,true)}}
+                </a>
+              {% endfor %}
+            </div>
+          {#
+            {{InnerJobSectionTow.render({
+                    "InnerfeatureJobTow":
+                })
+            }}
+          #}
+
+          <div class="text-center pt-5 pt-lg-13">
+              <a class="text-green font-weight-bold text-uppercase font-size-3 d-flex align-items-center justify-content-center" href="#">Load More <i class="fas fa-sort-down ml-3 mt-n2 font-size-4"></i>
+              </a>
+            </div>
+        </div>
+        <!-- form end -->
+      </div>
+      <!-- Right Section -->
+      <div class="col-12 col-xxl-4 col-xl-5 col-lg-10 position-static">
+        <div class="tab-content" id="serachlist-tab">
+          {% for tabpill in searchTwo.tabContent %}
+          <div class="tab-pane fade {% if loop.index == 1 %}show active{% endif %}" id="tab-pane-{{ loop.index }}" role="tabpanel" aria-labelledby="tab-nav-{{ loop.index }}">
+            {{JobDetailsSection.jobDetailesCard(tabpill)}}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Content end -->
+<!-- footer area function start -->
+{{Footer.render()}}
+<!-- footer area function end -->
+{% endblock %}

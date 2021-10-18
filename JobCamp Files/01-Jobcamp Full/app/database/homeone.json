@@ -1,0 +1,212 @@
+{
+    "homeOne":{
+        "cardOneSection" : [
+            {
+                "color"   : "blue",
+                "icon"    : "fa fa-briefcase",
+                "heading" : "Business Development",
+                "counter" : "415"
+        
+            },
+            {
+                "color"   : "spray",
+                "icon"    : "fa fa-headset",
+                "heading" : "Customer Service",
+                "counter" : "235"
+        
+            },
+            {
+                "color"   : "coral",
+                "icon"    : "fa fa-layer-group",
+                "heading" : "Development",
+                "counter" : "624"
+        
+            },
+            {
+                "color"   : "red",
+                "icon"    : "fa fa-pen-nib",
+                "heading" : "Design",
+                "counter" : "174"
+        
+            },
+        
+            {
+                "color"   : "orange",
+                "icon"    : "fa fa-rocket",
+                "heading" : "Marketing & Management",
+                "counter" : "268"
+        
+            },
+            {
+                "color"   : "yellow",
+                "icon"    : "fa fa-location-arrow",
+                "heading" : "Sales & Communication",
+                "counter" : "156"
+        
+            },
+            {
+                "color"   : "turquoise",
+                "icon"    : "icon icon-sidebar-2",
+                "heading" : "Project Management",
+                "counter" : "162"
+        
+            },
+            {
+                "color"   : "green",
+                "icon"    : "fa fa-user",
+                "heading" : "Human Resource ",
+                "counter" : "84"
+        
+            }
+        
+        ],
+        "FeaturedJob":[
+
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-1.png",
+                "BrandName" : "Google INC",
+                "JobTitle" : "Product Designer",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            },
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-2.png",
+                "BrandName" : "AirBnb",
+                "JobTitle" : "UI/UX Designer",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            },
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-3.png",
+                "BrandName" : "Shopify",
+                "JobTitle" : "iOS Developer",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            },
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-4.png",
+                "BrandName" : "Uber",
+                "JobTitle" : "Creative Director ",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            },
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-5.png",
+                "BrandName" : "Facebook",
+                "JobTitle" : "Marketing Manager ",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            },
+            {
+                "BrandImage" : "./image/l1/png/feature-brand-6.png",
+                "BrandName" : "Oculus",
+                "JobTitle" : "Software Engineer",
+                "jobDetails" : "We are looking for Enrollment Advisors who are looking to take 30-35 appointments per week. All leads are pre-scheduled.",
+                "tags":[
+                    {
+                      "icon":"icon icon-pin-3",
+                      "text":"Berlyn",
+                      "color":"denim"
+                    },
+                    {
+                      "icon":"fa fa-briefcase",
+                      "text":"Full-time",
+                      "color":"orange"
+                    },
+                    {
+                      "icon":"fa fa-dollar-sign",
+                      "text":"80K-90K",
+                      "color":"eastern"
+                    }
+                  ]
+                
+            }
+    
+        ]
+    }
+}
