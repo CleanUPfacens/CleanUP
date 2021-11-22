@@ -48,52 +48,52 @@
                   <a class="nav-link" id="navbarDropdown4" href="dashboard-main.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Painel </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown2" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços <i class="icon icon-small-down"></i></a>
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown2" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias <i class="icon icon-small-down"></i></a>
                   <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown2">
-                    <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown242" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="drop-menu-item">
+                      <a href="limpeza-empresarial.html">
                         Limpeza empresárial
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown21" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-piscina.html">
                         Limpeza de piscina
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown25g" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-pós-obra.html">
                         Limpeza pós-obra
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown242" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-residencial.html">
                         Limpeza residencial
                       </a>
                     </li>
                     <li class="drop-menu-item">
-                      <a href="#">
+                      <a href="limpeza-higienizacao-estofados.html">
                         Higienização de estofados
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown242" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-jardinagem.html">
                         Jardinagem
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown26" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-passadeira.html">
                         Passadeira
                       </a>
                     </li>
                     <li class="drop-menu-item ">
-                      <a class="dropdown-toggle gr-toggle-arrow" id="navbarDropdown26" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="limpeza-sanetizacao.html">
                         Sanitização
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Suporte</a>
+                <li class="nav-item ">
+                  <a class="nav-link" href="contact.html">Suporte</a>
                 </li>
               </ul>
             </div>
@@ -322,6 +322,7 @@
       <ul class="list-unstyled dashboard-layout-sidebar">
         <li class=""><a href="./dashboard-main.html" class="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center"><i class="icon icon-layout-11 mr-7"></i>Painel</a></li>
         <li class=""><a href="dashboard-posted-jobs.html" class="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center"><i class="fas fa-briefcase mr-7"></i>Serviços postados</a></li>
+        <li class=""><a href="dashboard-posted-applicants.html" class="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center"><i class="fas fa-user mr-7"></i>Serviços pendentes <span class="ml-auto px-1 h-1 bg-dodger text-white font-size-3 rounded-5 max-height-px-18 flex-all-center">5</span></a></li>
         <li class="active"><a href="./dashboard-settings.html" class="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center"><i class="fas fa-cog mr-7"></i>Editar perfil</a></li>
       </ul>
     </div>
@@ -398,16 +399,14 @@
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Portidóleo</label>
-                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-normal mb-4">Adicione aqui fotos, diplomas, certificados, tudo o que quiser anexar sobre o seu trabalho.</label>
-                          <div class="text-right"> 
-                            <input type="button" value="+ Arquivos" class="btn btn-gray btn-h-40 text-white min-width-px-150 rounded-5 text-uppercase text-align:center"> <br><br>
-                          </div>
-                          
+                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Portfólio</label>
+                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-normal mb-4">Adicione aqui fotos, diplomas, certificados, tudo o que quiser anexar sobre o seu trabalho.</label>                                             
                           <div class="custom-file">
                             <input type="file" class="custom-file-input" id="customFile">
                             <label class="custom-file-label" for="customFile"  data-browse="Procurar">Escolher um arquivo</label>
                           </div>
+                          <br><br>
+                          <input type="button" value="+ Arquivos" class="btn btn-gray btn-h-40 text-white min-width-px-150 rounded-5 text-uppercase text-align:center"> 
                           </div>
                         </div>
                       </div>
