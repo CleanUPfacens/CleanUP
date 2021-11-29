@@ -21,6 +21,20 @@
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Custom stylesheet -->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(function(){
+    $("#btn-mensagem").click(function(){
+    $("#modal-mensagem").modal();
+});
+  });
+  </script>
+
+
+
+  <script src="js/index.js"></script> 
 </head>
 
 <body>
@@ -380,7 +394,52 @@
                 <div class="col-12">
                   <!-- card-btn-group start -->
                   <div class="card-btn-group">
-                    <a class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" href="#">Contratar agora</a>
+
+                    <!-- Botão para acionar modal -->
+                      <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" data-toggle="modal" data-target="#ModalLongoExemplo">
+                        Contratar agora
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <div class="square-72 d-block mr-8">
+                                <img src="img/serviços1.svg" alt="">
+                              </div>
+                              <h5 class="modal-title" id="TituloModalLongoExemplo">Princípe Limpeza </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <h3></h4>
+                              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
+                                <option selected>Selecione qual tipo de limpeza</option>
+                                <option value="1">Empresarial </option>
+                                <option value="2">Domicílio </option>
+                                <option value="3">Pós-obra </option>
+                                
+                              </select>
+                              <div class="form-group"><br><br><br>
+                                <label for="email" class="font-size-4 text-black-2 font-weight-semibold line-height-reset">Inserir seu E-mail</label>
+                                <input type="email" class="form-control" placeholder="example@gmail.com" id="email">
+                              </div>
+                              <div class="form-group">
+                                <label for="email" class="font-size-4 text-black-2 font-weight-semibold line-height-reset cols=30 rows=5  ">Descrição</label>
+                                <input type="email" class="form-control" placeholder="" id="email">
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" data-dismiss="modal">Finalizar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                        
                     <a class="btn btn-gray text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" href="company-profile.html">Ver perfil</a>
                     <a class="btn btn-outline-mercury text-black-2 text-uppercase h-px-48 rounded-3 mb-5 px-5"
                       href="#">
@@ -725,6 +784,13 @@
 <script src="plugins/counter-up/jquery.waypoints.min.js"></script>
 <script src="plugins/ui-range-slider/jquery-ui.js"></script>
 <!-- Activation Script -->
+
+
+<script>
+$("#btn-mensagem").click(function(){
+  $("#modal-mensagem").modal();
+});
+</script>
 <!-- <script src="js/drag-n-drop.js"></script> -->
 <script src="js/custom.js"></script>
 </body>
