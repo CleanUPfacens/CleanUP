@@ -82,3 +82,15 @@ Bairro varchar(80),
 Estado varchar(80),
 Cidade varchar(80)
 );
+
+create table Pagamento(
+id_pagamento          int auto_increment primary key,
+endereco_pagamento    varchar(80),
+Foto_pagamento        MEDIUMBLOB,
+tipo_pagamento        varchar(80),
+dataehora_pagamento   varchar(80),
+complemento           varchar(80),
+descricao_do_pedido   varchar(80),
+chavestrangeira_consumidor int,
+foreign key(chavestrangeira_consumidor) references consumidor(id)
+);
