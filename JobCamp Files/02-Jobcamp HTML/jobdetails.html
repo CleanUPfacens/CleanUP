@@ -414,27 +414,78 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <h3></h4>
-                              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 
-                                <option selected>Selecione qual tipo de limpeza</option>
-                                <option value="1">Empresarial </option>
-                                <option value="2">Domicílio </option>
-                                <option value="3">Pós-obra </option>
-                                
-                              </select>
-                              <div class="form-group"><br><br><br>
-                                <label for="email" class="font-size-4 text-black-2 font-weight-semibold line-height-reset">Inserir seu E-mail</label>
-                                <input type="email" class="form-control" placeholder="example@gmail.com" id="email">
-                              </div>
-                              <div class="form-group">
-                                <label for="email" class="font-size-4 text-black-2 font-weight-semibold line-height-reset cols=30 rows=5  ">Descrição</label>
-                                <input type="email" class="form-control" placeholder="" id="email">
-                              </div>
+                              <div class="contact-form bg-white shadow-8 rounded-4 pl-sm-10 pl-4 pr-sm-11 pr-4 pt-15 pb-13">
+                                <div class="upload-file mb-16 text-center">
+                                  <div id="userActions" class="square-144 m-auto px-6 mb-7">
+                                    <label for="fileUpload" class="mb-0 font-size-4 text-smoke">Navegar ou arrastar e soltar</label>
+                                    <input type="file" id="fileUpload" class="sr-only" />
+                                  </div>
+                                  <!-- <img id="imgPrime" src="" alt="uploaded image placeholder" /> -->
+                                  <!-- <input type="file" id="upfile"> -->
+                                </div>
+                                <form action="/">
+                                  <fieldset>
+                                    <div class="row mb-xl-1 mb-9">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <label for="namedash" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Nome da empresa</label>
+                                          <input type="text" class="form-control h-px-48" id="namedash" placeholder="por exemplo: Google">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <label for="select2" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Tipo</label>
+                                          <select id="select2" class="form-control nice-select pl-6 arrow-3 h-px-48 w-100 font-size-4">
+                                            <option>Selecione</option>
+                                            <option>Micro empresa</option>
+                                            <option>Pequeno porte</option>
+                                            <option>Médio</option>
+                                            <option>Grande</option>
+                                            <option>Autônomo(a)</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row mb-8">
+                                      <div class="col-lg-6 mb-xl-0 mb-7">
+                                        <div class="form-group position-relative">
+                                          <label for="select3" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Data e hora</label>
+                                          <input type="text" class="form-control h-px-48" id="namedash" placeholder="04/12/2021 12:00">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <label for="namedash" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Localização</label>
+                                          <input type="text" class="form-control h-px-48" id="namedash" placeholder="Cidade - Estado">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Descrição do pedido </label>
+                                          <textarea name="textarea" id="aboutTextarea" cols="30" rows="7" class="border border-mercury text-gray w-100 pt-4 pl-6" placeholder="Descreva sobre a empresa o que a torna única"></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-semibold mb-4">Portfólio</label>
+                                          <label for="aboutTextarea" class="d-block text-black-2 font-size-4 font-weight-normal mb-4">Adicione aqui fotos do local da limpeza.</label>                                             
+                                          <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile"  data-browse="Procurar">Escolher um arquivo</label>
+                                          </div>
+                                          
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" data-dismiss="modal">Fechar</button>
-                              <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5" data-dismiss="modal">Finalizar</button>
+                              <button type="button" class="btn btn-green text-uppercase btn-medium rounded-3 w-180 mr-4 mb-5">Finalizar</button>
                             </div>
                           </div>
                         </div>
