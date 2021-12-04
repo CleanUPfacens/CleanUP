@@ -25,8 +25,8 @@
 <body>
   <div class="site-wrapper overflow-hidden ">
     <!-- Header start  -->
-    <!-- Header Area -->
-    <header class="site-header site-header--menu-right dynamic-sticky-bg py-7 py-lg-0 site-header--absolute site-header--sticky">
+     <!-- Header Area -->
+     <header class="site-header site-header--menu-right bg-default py-7 py-lg-0 site-header--absolute site-header--sticky">
       <div class="container">
         <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0 py-0">
           <!-- Brand Logo-->
@@ -41,14 +41,14 @@
           <div class="collapse navbar-collapse" id="mobile-menu">
             <div class="navbar-nav-wrapper">
               <ul class="navbar-nav main-menu">
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                   <a class="nav-link" id="navbarDropdown3" href="index.html" role="button"  aria-haspopup="true" aria-expanded="true">Home </a>
                 </li>
-                <li class="nav-item dropdown ">
-                  <a class="nav-link" id="navbarDropdown3" href="jobdetails.html" role="button"  aria-haspopup="true" aria-expanded="true">Serviços </a>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown4" href="jobdetails.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown2" href="jobdetails.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias <i class="icon icon-small-down"></i></a>
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown2" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias <i class="icon icon-small-down"></i></a>
                   <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown2">
                     <li class="drop-menu-item">
                       <a href="limpeza-empresarial.html">
@@ -92,8 +92,38 @@
                     </li>
                   </ul>
                 </li>
-
-              </ul>
+                <li class="nav-item ">
+                  <a class="nav-link" href="contact.html">Suporte</a>
+                </li>
+              </div>
+            </ul>
+              <button class="d-block d-lg-none offcanvas-btn-close focus-reset" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="gr-cross-icon"></i>
+              </button>
+            </div>
+            <div class="header-btn-devider ml-auto ml-lg-5 pl-2 d-none d-xs-flex align-items-center">
+              <div>
+                <a href="#" class="px-3 ml-7 font-size-7 notification-block flex-y-center position-relative">
+                  <i class="fas fa-bell heading-default-color"></i>
+                  <span class="font-size-3 count font-weight-semibold text-white bg-primary circle-24 border border-width-3 border border-white">3</span>
+                </a>
+              </div>
+              <div>
+                <div class="dropdown show-gr-dropdown py-5">
+                  <a class="proile media ml-7 flex-y-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="circle-40">
+                      <img src="img/login.svg" alt="">
+                    </div>
+                    <i class="fas fa-chevron-down heading-default-color ml-6"></i>
+                  </a>
+                  <div class="dropdown-menu gr-menu-dropdown dropdown-right border-0 border-width-2 py-2 w-auto bg-default" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item py-2 font-size-3 font-weight-semibold line-height-1p2 text-uppercase" href="candidate-profile-main.html">Ver perfil</a>
+                    <a class="dropdown-item py-2 text-red font-size-3 font-weight-semibold line-height-1p2 text-uppercase" href="index.html">Sair</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!--  </ul>
             </div>
             <button class="d-block d-lg-none offcanvas-btn-close focus-reset" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
               <i class="gr-cross-icon"></i>
@@ -106,8 +136,7 @@
             <a class="btn btn-primary text-uppercase font-size-3" href="javacript:" data-toggle="modal" data-target="#signup">
               Cadastre-se
             </a>
-          </div>
-          <!-- Mobile Menu Hamburger-->
+         Mobile Menu Hamburger-->
           <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <i class="icon icon-simple-remove icon-close"></i> -->
             <span class="hamburger hamburger--squeeze js-hamburger">
@@ -280,7 +309,7 @@
 
                   </div>
                   <div class="form-group mb-8">
-                    <a class="btn btn-primary btn-medium w-100 rounded-5 text-uppercase" href="search-gridLog.html">Crir Conta</a>
+                    <a class="btn btn-primary btn-medium w-100 rounded-5 text-uppercase" href="search-grid.html">Crir Conta</a>
                   </div>
                   <p class="font-size-4 text-center heading-default-color"> <a href="" class="text-primary">Entrar em sua conta!</a></p>
                 </form>
